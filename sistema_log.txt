@@ -1,0 +1,77 @@
+======================================================================
+LOG DEL SISTEMA INTEGRAL DE GESTIÓN
+Iniciado: 2026-05-12 20:14:08.124748
+======================================================================
+
+[2026-05-12 20:14:08] INFO: Cargados 6 servicios iniciales
+
+[2026-05-12 20:14:08] INFO: Cliente creado: Juan Perez
+
+[2026-05-12 20:14:08] INFO: Cliente registrado: Juan Perez
+
+[2026-05-12 20:14:08] INFO: Cliente creado: Maria Gomez
+
+[2026-05-12 20:14:08] INFO: Cliente registrado: Maria Gomez
+
+[2026-05-12 20:14:08] ERROR: El email no tiene un formato válido
+    Contexto: registrar_cliente
+    Traceback: Traceback (most recent call last):
+  File "c:\Users\NELSON\Desktop\Nelson\ingenieria electronica\7 semestre 16-01 2026\PROGRAMACIÓN\4\Precentacion Guthub\Sistema Integral.py", line 471, in registrar_cliente
+    cliente = Cliente(id_cliente, nombre, email, telefono)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NELSON\Desktop\Nelson\ingenieria electronica\7 semestre 16-01 2026\PROGRAMACIÓN\4\Precentacion Guthub\Sistema Integral.py", line 94, in __init__
+    self.email = email
+    ^^^^^^^^^^
+  File "c:\Users\NELSON\Desktop\Nelson\ingenieria electronica\7 semestre 16-01 2026\PROGRAMACIÓN\4\Precentacion Guthub\Sistema Integral.py", line 131, in email
+    raise ValidacionError("El email no tiene un formato válido")
+ValidacionError: El email no tiene un formato válido
+
+
+[2026-05-12 20:14:08] ERROR: El teléfono debe contener solo números
+    Contexto: registrar_cliente
+    Traceback: Traceback (most recent call last):
+  File "c:\Users\NELSON\Desktop\Nelson\ingenieria electronica\7 semestre 16-01 2026\PROGRAMACIÓN\4\Precentacion Guthub\Sistema Integral.py", line 471, in registrar_cliente
+    cliente = Cliente(id_cliente, nombre, email, telefono)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NELSON\Desktop\Nelson\ingenieria electronica\7 semestre 16-01 2026\PROGRAMACIÓN\4\Precentacion Guthub\Sistema Integral.py", line 95, in __init__
+    self.telefono = telefono
+    ^^^^^^^^^^^^^
+  File "c:\Users\NELSON\Desktop\Nelson\ingenieria electronica\7 semestre 16-01 2026\PROGRAMACIÓN\4\Precentacion Guthub\Sistema Integral.py", line 143, in telefono
+    raise ValidacionError("El teléfono debe contener solo números")
+ValidacionError: El teléfono debe contener solo números
+
+
+[2026-05-12 20:14:09] INFO: Reserva creada: R0001
+
+[2026-05-12 20:14:09] ERROR: Servicio con ID X999 no encontrado
+    Contexto: crear_reserva
+    Traceback: Traceback (most recent call last):
+  File "c:\Users\NELSON\Desktop\Nelson\ingenieria electronica\7 semestre 16-01 2026\PROGRAMACIÓN\4\Precentacion Guthub\Sistema Integral.py", line 535, in crear_reserva
+    raise ReservaError(f"Servicio con ID {id_servicio} no encontrado")
+ReservaError: Servicio con ID X999 no encontrado
+
+
+[2026-05-12 20:14:09] ERROR: La duración debe ser mayor a 0
+    Contexto: crear_reserva
+    Traceback: Traceback (most recent call last):
+  File "c:\Users\NELSON\Desktop\Nelson\ingenieria electronica\7 semestre 16-01 2026\PROGRAMACIÓN\4\Precentacion Guthub\Sistema Integral.py", line 539, in crear_reserva
+    raise ValidacionError("La duración debe ser mayor a 0")
+ValidacionError: La duración debe ser mayor a 0
+
+
+[2026-05-12 20:14:09] INFO: Costo calculado para Sala Ejecutiva: $150.0
+
+[2026-05-12 20:14:09] INFO: Reserva R0001 confirmada para Juan Perez
+
+[2026-05-12 20:14:09] INFO: Reserva creada: R0002
+
+[2026-05-12 20:14:09] INFO: Costo calculado para Asesoría Python: $450.0
+
+[2026-05-12 20:14:09] INFO: Reserva R0002 confirmada para Maria Gomez
+
+[2026-05-12 20:14:09] INFO: Reserva R0001 cancelada
+
+[2026-05-12 20:14:09] INFO: Costo calculado para Sala Ejecutiva: $250.0
+
+[2026-05-12 20:14:09] INFO: Costo calculado para Sala Ejecutiva: $250.0
+
